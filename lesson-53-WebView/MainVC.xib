@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="lesson_53_WebView" customModuleProvider="target">
+            <connections>
+                <outlet property="safariBtn" destination="OGY-fR-yXI" id="D3z-AU-cWu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="youtubeBtn" destination="MAf-Jc-FSv" id="Nf4-Xd-YBf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGY-fR-yXI">
+                    <rect key="frame" x="86" y="754" width="221" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="go to safari"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="safariBtnPressed:" destination="-1" eventType="touchUpInside" id="gWK-ex-XWq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAf-Jc-FSv">
+                    <rect key="frame" x="86" y="673" width="221" height="64"/>
+                    <color key="backgroundColor" red="0.6140148044" green="0.91113561389999997" blue="0.34250676629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="go to youtube"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="youtubeBtbPressed:" destination="-1" eventType="touchUpInside" id="AxS-A0-SPr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="OGY-fR-yXI" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.562341" id="3Ct-mv-Gqg"/>
+                <constraint firstItem="OGY-fR-yXI" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0751174" id="4Mg-eG-9XR"/>
+                <constraint firstItem="MAf-Jc-FSv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.562341" id="6FQ-xh-PTK"/>
+                <constraint firstItem="OGY-fR-yXI" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="CiT-PK-V9e"/>
+                <constraint firstItem="OGY-fR-yXI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LSI-PF-rEU"/>
+                <constraint firstItem="OGY-fR-yXI" firstAttribute="top" secondItem="MAf-Jc-FSv" secondAttribute="bottom" constant="17" id="QRd-mj-fC7"/>
+                <constraint firstItem="MAf-Jc-FSv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VGD-0F-E5h"/>
+                <constraint firstItem="MAf-Jc-FSv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0751174" id="yXV-dl-iGG"/>
+            </constraints>
+            <point key="canvasLocation" x="127.48091603053435" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
